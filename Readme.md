@@ -4,13 +4,13 @@ This project is a simple web application that allows users to insert a new row a
 
 ## 💻 How to Use
 
-- Open the `index.html` file in a web browser.
+- Open the `lab1.html` file in a web browser.
 - Click **"Insert row"** to add a new row to the bottom of the table.
 - Click **"Delete row"** to remove the top row from the table.
 
 ## 🗂️ Files
 
-- `index.html`: Contains the full HTML structure and JavaScript functions for inserting and deleting rows.
+- `lab1.html`: Contains the full HTML structure and JavaScript functions for inserting and deleting rows.
   - 🔸 *Lines 12–18: JavaScript function `insertRowBottom()` was written with help from AI.*
   - 🔸 All HTML and structure created by me.
 
