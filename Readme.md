@@ -1,36 +1,41 @@
-# Insert/Delete Row Table Lab
+# NirajBhandariJavaFXApp
 
-This project is a simple web application that allows users to insert a new row at the bottom or delete the top row of an HTML table using JavaScript.
-
-## 💻 How to Use
-
-- Open the `lab1.html` file in a web browser.
-- Click **"Insert row"** to add a new row to the bottom of the table.
-- Click **"Delete row"** to remove the top row from the table.
-
-## 🗂️ Files
-
-- `lab1.html`: Contains the full HTML structure and JavaScript functions for inserting and deleting rows.
-  - 🔸 *Lines 12–18: JavaScript function `insertRowBottom()` was written with help from AI.*
-  - 🔸 All HTML and structure created by me.
-
-## 📚 Sources
-
-- Some assistance was taken from ChatGPT for JavaScript syntax (specifically for `insertRowBottom()`).
-- The rest of the logic, layout, and testing were done independently.
-
-## 🔐 Original Work
-
-- This submission includes original work:
-  - HTML table structure
-  - Integration of JavaScript with DOM methods
-  - Page layout and button functionality
-  For the comments I have provided it myself
-
+## 📘 Overview
+This JavaFX application connects to a MySQL database and displays student data in a TableView. Data is fetched and displayed when the user clicks a button.
 
 ---
 
-## 📌 Submission Guidelines
+## ✅ Features
 
-- This project is submitted for the lab running from **8am to noon**.
-- A late submission would require permission and a valid explanation as per lab policy.
+- GUI built with JavaFX
+- Connects to MySQL using JDBC
+- Loads and displays data from `students` table
+- Button click triggers data retrieval
+
+---
+
+## 🗄️ MySQL Setup
+
+```sql
+CREATE DATABASE IF NOT EXISTS school_db;
+USE school_db;
+
+CREATE TABLE IF NOT EXISTS students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    program VARCHAR(100)
+);
+
+INSERT INTO students (id, name, program) VALUES
+(1, 'Niraj Bhandari', 'Computer Programming'),
+(2, 'Alex Johnson', 'Software Engineering'),
+(3, 'Priya Sharma', 'Information Technology'),
+(4, 'Daniel Kim', 'Cybersecurity'),
+(5, 'Lina Wong', 'Artificial Intelligence');
+Some of the codes are through Ai. I have also used websites like W3Schools.
+👤 Author
+Name: Niraj Bhandari
+
+Student ID: 123456789
+
+Date: 2025-07-10
